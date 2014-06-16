@@ -10,10 +10,10 @@ html, body {
     top: 50%;
     left: 50%;
     
-    height: 200px;
-    width: 200px;
-    margin-top: -100px; 
-    margin-left: -100px;
+    height: 100px;
+    width: 100px;
+    margin-top: -50px; 
+    margin-left: -50px;
     
     border-color: orange;
     border-width:2px;
@@ -24,14 +24,11 @@ html, body {
 }
 
 #earth {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    
+	position:absolute;
     height: 50px;
     width: 50px;
-    margin-left: -25px;
-    margin-top: -25px;
+	margin-left: 25px;
+    margin-top: 25px;
 }
 
 #earth-orbit {
@@ -39,21 +36,48 @@ html, body {
     top: 50%;
     left: 50%;
     
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     margin-top: -250px;
     margin-left: -250px;
     
-    border-width: 2px;
+	/*border-width: 2px;
     border-style: dotted;
     border-color: white;
-    border-radius: 50%;
+    border-radius: 50%; */
     
     -webkit-animation: spin-right 10s linear infinite;
      -moz-animation: spin-right 10s linear infinite;
       -ms-animation: spin-right 10s linear infinite;
        -o-animation: spin-right 10s linear infinite;
           animation: spin-right 10s linear infinite;
+}
+
+#moon {
+	height: 10px;
+	width: 10px;
+}
+
+#moon-orbit {
+	top:50%;
+	left:50%;
+    
+    width: 100px;
+    height: 100px;
+	
+    margin-left: 10px;
+    margin-bottom: -110px;
+    
+	/*border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;*/
+    
+    -webkit-animation: spin-right 1s linear infinite;
+     -moz-animation: spin-right 1s linear infinite;
+      -ms-animation: spin-right 1s linear infinite;
+       -o-animation: spin-right 1s linear infinite;
+          animation: spin-right 1s linear infinite;
 }
 
 @-webkit-keyframes spin-right {
